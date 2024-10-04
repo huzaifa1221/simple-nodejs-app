@@ -15,7 +15,9 @@ steps:
     versionSpec: '20.x'
   displayName: 'Install Node.js'
 
+
+
 - script: |
-    npm install
-    npm run start
-  displayName: 'npm install and start app'
+    ls -ltr
+    pwd
+  displayName: 'lmao'
