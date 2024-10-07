@@ -9,15 +9,19 @@ trigger:
 pool:
   name: "huzaifa"
 
-steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '20.x'
-  displayName: 'Install Node.js'
+jobs:
+- job: FirstJob
+  steps:
+   - task: NodeTool@0
+     inputs:
+       versionSpec: '20.x'
+     displayName: 'Install Node.js'
+     
+   - script: |
+        ls -ltr
+        pwd
+     displayName: 'lmao'  
 
 
 
-- script: |
-    ls -ltr
-    pwd
-  displayName: 'lmao'
+
